@@ -92,6 +92,7 @@ const HomePage = () => {
               <br />
               Felizmente, Zé Inácio não faz uso de drogas para se manter acordado, preferindo recorrer ao tradicional café para preservar sua saúde. Por conta disso, ele pediu a seu neto que implementasse uma nova funcionalidade no sistema que desenvolveram na sprint passada. Essa funcionalidade permitiria cadastrar novas viagens, incluindo informações como origem, destino, prazo final e duração estimada da viagem.
               <br />
+              Convém ressaltar que uma solução ótima é a que dentre as soluções, o atraso máximo de uma viagem seja mínimo,ou seja, é melhor, por exemplo, atrasar uma hora em todas as viagens que duas horas em apenas uma viagem.
               Felizmente, a feature já foi desenvolvida. Para utilizar o sistema, basta acessar a aba "Minimizing Lateness".
             </div>
           </StyledParagraph>
