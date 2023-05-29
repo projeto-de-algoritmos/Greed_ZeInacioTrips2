@@ -1,0 +1,84 @@
+
+
+.origem-destino {
+    white-space: nowrap;
+}
+.duracao-deadline {
+    white-space: nowrap;
+}
+
+.linha-do-tempo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    height: 60px;
+    margin-top: 50px;
+}
+
+.icon-caminhao {
+    cursor: pointer;
+    position: relative;
+}
+
+
+.linha-do-tempo:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ddd;
+}
+
+.viagem-item {
+    position: relative;
+    z-index: 1;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #007bff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50;
+    left: 100%;
+    transform: translate(0%, -50%);
+    background: #555;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover {
+    opacity: 1;
+}
+
+.tooltip:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+}
+
+.circle:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+}

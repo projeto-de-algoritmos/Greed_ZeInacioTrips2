@@ -1,0 +1,17 @@
+.custom-datepicker {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: #f1f3f4;
+    border-radius: 5px;
+    transition: background 0.25s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+  
+    &:focus {
+      background: #e6eaf0;
+    }
+  }
+  
