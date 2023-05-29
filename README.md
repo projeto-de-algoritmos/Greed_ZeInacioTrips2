@@ -1,5 +1,5 @@
 # ZeInacioTrips
-![img](./src/assets/montagem1.jpeg)
+![img](./src/assets/montagem2.jpeg)
 **Número da Lista**: X<br>
 **Conteúdo da Disciplina**: Algoritmos Ambiciosos<br>
 
@@ -10,7 +10,7 @@
 | 18/0145509  |  Lucas Ramon Alves De Oliveira |
 
 ## Sobre 
-Este projeto é centrado em José Inácio, o personagem principal da aplicação, que é um caminhoneiro diligente. O objetivo é auxiliá-lo na identificação do roteiro de viagem mais eficiente para evitar atrasos, tomando como base as regras de negócio estabelecidas pela empresa Centro-Sul. Para realizar essa otimização de roteamento, a aplicação faz uso do algoritmo de Scheduling to Minimizing Lateness, uma solução comprovada para encontrar o menor atraso.  
+Este projeto tem como foco principal José Inácio, um caminhoneiro dedicado que é o personagem principal desta aplicação. O objetivo é ajudá-lo a identificar o roteiro de viagem mais eficiente para evitar atrasos, levando em consideração as regras de negócio estabelecidas pela empresa Centro-Sul. Para realizar essa otimização de roteamento, a aplicação utiliza o algoritmo de Scheduling to Minimizing Lateness, uma solução comprovada para encontrar o menor atraso possível.  
 
 ## Screenshots
 ![img](./doc/documentacao4.jpeg)
