@@ -1,5 +1,5 @@
 # ZeInacioTrips
-![img](./src/assets/montagem2.jpeg)
+![img](./src/assets/montagem2_resized.jpeg)
 **Número da Lista**: X<br>
 **Conteúdo da Disciplina**: Algoritmos Ambiciosos<br>
 
