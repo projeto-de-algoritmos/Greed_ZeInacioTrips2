@@ -84,10 +84,13 @@ function parseDate(dateString) {
 
 
 
-const cities = ["São Paulo", "Rio de Janeiro", "Brasília", "Salvador", "Manaus", "Recife",
-  "Curitiba", "Fortaleza", "Porto Alegre", "Natal", "Florianópolis", "Belém", "Goiânia", "Maceió",
-  "Campo Grande", "Cuiabá", "João Pessoa", "Aracaju", "Teresina", "Vitória", "São Luís", "Palmas",
-  "Boa Vista", "Porto Velho"];
+const cities = [
+  "Rio Branco", "Maceió", "Macapá", "Manaus", "Salvador", "Fortaleza", "Brasília", "Vitória", "Goiânia",
+  "São Luís", "Cuiabá", "Campo Grande", "Belo Horizonte", "Belém", "João Pessoa", "Curitiba", "Recife", 
+  "Teresina", "Rio de Janeiro", "Natal", "Porto Alegre", "Porto Velho", "Boa Vista", "Florianópolis", 
+  "São Paulo", "Aracaju", "Palmas"
+];
+
 
 function FormViagem({ addViagem }) {
   const [origem, setOrigem] = useState('');
@@ -113,8 +116,9 @@ function validateDate(date) {
   const handleAddViagem = (event) => {
     event.preventDefault();
     addViagem(origem, destino, duracao, deadline);
-    setOrigem('');
-    setDestino('');
+    document.getElementById("tripForm").reset();
+    setOrigem(null);
+    setDestino(null);
     setDuracao(1);
     setDeadline('');
   }
@@ -175,14 +179,14 @@ function validateDate(date) {
 
   return (
     <FormContainer>
-      <StyledForm onSubmit={handleAddViagem}>
+      <StyledForm   id="tripForm" onSubmit={handleAddViagem}>
 
         <InputWrapper>
           <label>
             Origem:
             <Select
-              value={options.find((option) => option.value === origem)}
-              onChange={(selectedOption) => setOrigem(selectedOption.value)}
+              value={origem ? options.find((option) => option.value === origem) : null}
+              onChange={(selectedOption) => setOrigem(selectedOption ? selectedOption.value : null)}
               options={options}
               placeholder="Selecione uma cidade"
               styles={customStyles}
@@ -193,8 +197,8 @@ function validateDate(date) {
           <label>
             Destino:
             <Select
-              value={options.find((option) => option.value === destino)}
-              onChange={(selectedOption) => setDestino(selectedOption.value)}
+              value={destino ? options.find((option) => option.value === destino) : null}
+              onChange={(selectedOption) => setDestino(selectedOption ? selectedOption.value : null)}
               options={options}
               placeholder="Selecione uma cidade"
               styles={customStyles}
